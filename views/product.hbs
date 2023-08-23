@@ -1,0 +1,21 @@
+<h1>{{title}}</h1>
+
+{{#if price}}
+<h2>{{price}} €</h2>
+{{else}}
+<h2>Price upon request</h2>
+{{/if}}
+
+
+<ul>
+    {{#each ingredients}}
+    <li>{{this.ingredientName}}</li>
+    {{/each}}
+</ul>
+
+{{log ingredients}}
+
+
+
+
+<img src="{{imageFile}}" alt="">
