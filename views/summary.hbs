@@ -1,0 +1,41 @@
+{{#if listOfPizzas}}
+<div id="summary-board">
+    {{#each listOfPizzas}}
+    <div class="summary-item">
+        <a href="/pizzas/{{this.title}}">{{this.title}}</a>
+        <img src="/images/{{this.imageFile}}" alt="">
+        <button class="btn-delete" onclick="">X</button>
+    </div>
+    {{/each}}
+</div>
+
+{{else}}
+<h3>Sorry, no pizzas with that search criteria</h3>
+{{/if}}
+
+<h1>Summary of our pizzas</h1>
+
+
+
+
+{{!--
+<h1>Summary of our {{this.main}}</h1>
+
+
+
+<div id="summary-board">
+
+
+
+    {{#each this.data}}
+
+    <div class="summary-item">
+
+        <a href="/{{@root.main}}/{{this.title}}">{{this.title}}</a>
+        <img src="/images/{{this.imageFile}}" alt="">
+    </div>
+    {{/each}}
+
+
+
+</div> --}}
